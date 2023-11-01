@@ -119,7 +119,7 @@ def main():
                         )
                         revealedBoxes[firstSelection[0]][firstSelection[1]] = False
                         revealedBoxes[boxx][boxy] = False
-                        fails += 1 # корисникот направил грешка
+                        fails += 1  # корисникот направил грешка
                     elif hasWon(revealedBoxes):  # check if all pairs found
                         gameWonAnimation(mainBoard)
                         pygame.time.wait(2000)
