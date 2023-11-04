@@ -9,8 +9,8 @@ from pygame.locals import *
 # Create the constants (go ahead and experiment with different values)
 
 # изменета е големината на таблата на играта
-BOARDWIDTH = 4  # number of columns in the board
-BOARDHEIGHT = 4  # number of rows in the board
+BOARDWIDTH = 8  # number of columns in the board
+BOARDHEIGHT = 6  # number of rows in the board
 TILESIZE = 80
 WINDOWWIDTH = 640
 WINDOWHEIGHT = 480
@@ -310,6 +310,7 @@ def drawBoard(board, message):
             if board[tilex][tiley]:
                 drawTile(tilex, tiley, board[tilex][tiley])
 
+    # доколку сме во Help mode, тогаш осветли ги квадратите
     if helpMode:
         highlightAdjacentFields(board)
 
